@@ -1,0 +1,10 @@
+{
+  "name": "svg-workflow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:simonhildebrandt/svg-workflow.git",
+  "author": "Simon Hildebrandt <simonhildebrandt@gmail.com",
+  "license": "MIT",
+  "private": true,
+  "workspaces": ["packages/heist-component", "packages/heist-example", "packages/babel-plugin-svgr-replace-jsx-tags"]
+}

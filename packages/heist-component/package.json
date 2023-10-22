@@ -1,0 +1,19 @@
+{
+  "name": "heist-component",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "convert-heist": "yarn --silent svgr --template svgr-template.js assets/heist.svg > src/Heist.tsx",
+    "copy": "cp src/Heist.tsx ../heist-example/src/"
+  },
+  "devDependencies": {
+    "babel-plugin-svgr-replace-jsx-tags": "^1.0.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.17.5",
+    "@svgr/cli": "^6.2.1",
+    "@svgr/plugin-jsx": "^6.2.1"
+  }
+}
