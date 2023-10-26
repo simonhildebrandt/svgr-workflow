@@ -24393,8 +24393,8 @@
   // src/AnimationContext.tsx
   var context2 = (0, import_react.createContext)({});
   var AnimationContext = ({ children }) => {
-    const bus = (0, import_react.useMemo)(() => new Subject(), []);
     const [stepNo, setStepNo] = (0, import_react.useState)(-1);
+    const bus = (0, import_react.useMemo)(() => new Subject(), []);
     function advance(direction) {
       const nextStep = stepNo + direction;
       if (nextStep < -1 || nextStep >= steps.length) {
